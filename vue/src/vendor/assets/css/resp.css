@@ -1,0 +1,166 @@
+
+    /* NOVO */
+        /* MOBILE */
+            @media screen AND (max-width: 699px) {
+            }
+        /* MOBILE */
+
+        /* DESK */
+            @media screen AND (min-width: 701px) {
+            }
+        /* DESK */
+    /* NOVO */
+
+    
+    /* CARROCEL */
+        /* MOBILE */
+            @media (max-width: 1000px){
+                .mobile_carrosel { padding-bottom: 20px; overflow: auto; }
+                .mobile_carrosel ul { display: table; -webkit-overflow-scrolling: touch; }
+                .mobile_carrosel ul > li { display: table-cell;  }
+
+                .mobile_scroll { padding-bottom: 20px; white-space: nowrap; overflow-y: hidden; overflow-x: scroll; -webkit-overflow-scrolling: touch; }
+
+                .mobile_1 .mobile_scroll > div,
+                .mobile_1 .mobile_scroll > li { display: inline-block; width: 80%; vertical-align: top; white-space: normal; }
+                .mobile_2 .mobile_scroll > div,
+                .mobile_2 .mobile_scroll > li { display: inline-block; width: 40%; vertical-align: top; white-space: normal; }
+                .mobile_3 .mobile_scroll > div,
+                .mobile_3 .mobile_scroll > li { display: inline-block; width: 28%; vertical-align: top; white-space: normal; }
+                .mobile_4 .mobile_scroll > div,
+                .mobile_4 .mobile_scroll > li { display: inline-block; width: 22%; vertical-align: top; white-space: normal; }
+
+                .mobile_60p .mobile_scroll > div,
+                .mobile_60p .mobile_scroll > li { display: inline-block; width: 60%; vertical-align: top; white-space: normal; }
+}
+        /* MOBILE */
+    /* CARROCEL */
+
+
+
+
+
+    /* DEFAULT */
+        .minw_all { min-width: 350px; }
+    
+        @media (max-width: 1000px){
+            .h_1000 { height: auto !important; }
+        }
+
+        @media (max-width: 1000px){
+            .tablee, .bg_mobile { min-height: auto !important; background-image: none !important; }
+        }
+
+        @media print {
+            .no_print, .no-print { display: none !important; }
+        }
+
+
+        /* TABLE_MOBILE */
+            .tablee, .table_mobile { padding-bottom: 5px; overflow: auto; }
+
+            .tablee:has(tr.fixed),
+            .table_mobile:has(tr.fixed) { overflow: inherit; }
+            @media (max-width: 1000px){
+                .tablee:has(tr.fixed),
+                .table_mobile:has(tr.fixed) { padding-bottom: 5px; max-height: calc(100vh - 160px); overflow: auto !important; }
+            }
+            @media (max-width: 600px){
+                .tablee:has(tr.fixed),
+                .table_mobile:has(tr.fixed) { max-height: calc(100vh - 220px); }
+            }
+        /* TABLE_MOBILE */
+
+
+        /* ROWW */
+            .roww { margin: 0 -10px; }
+            .roww5, .roww_5 { margin: 0 -5px; }
+            .roww10, .roww_10 { margin: 0 -10px; }
+            .roww15, .roww_15 { margin: 0 -15px; }
+            .roww20, .roww_20 { margin: 0 -20px; }
+            .roww25, .roww_25 { margin: 0 -25px; }
+            @media screen AND (max-width: 999px){
+                .roww, .roww5, .roww_5, .roww10, .roww_10, .roww15, .roww_15, .roww20, .roww_20, .roww25, .roww_25 { margin: 0 !important; }
+            }
+        /* ROWW */
+
+
+        /* CENTERR */
+            .centerr_0 { padding: 0 25px !important; }
+            @media screen AND (max-width: 399px){
+                .centerr_0 { padding: 0 15px !important; }
+            }
+            @media screen AND (min-width: 1400px){
+                .centerr_0 { width: 1320px !important; margin: 0 auto !important; padding: 0 !important; }
+            }
+
+            .centerr { padding: 0 20px !important; }
+            @media screen AND (min-width: 1200px){
+                .centerr { width: 1120px !important; margin: 0 auto !important; padding: 0 !important; }
+            }
+
+            .centerr_1 { padding: 0 20px !important; }
+            @media screen AND (min-width: 1000px){
+                .centerr_1 { width: 920px !important; margin: 0 auto !important; padding: 0 !important; }
+            }
+
+            .centerr_2 { padding: 0 20px !important; }
+            @media screen AND (min-width: 800px){
+                .centerr_2 { width: 720px !important; margin: 0 auto !important; padding: 0 !important; }
+            }
+
+            .centerr_3 { padding: 0 20px !important; }
+            @media screen AND (min-width: 700px){
+                .centerr_3 { width: 680px !important; margin: 0 auto !important; padding: 0 !important; }
+            }
+
+            .centerr_4 { padding: 0 20px !important; }
+            @media screen AND (min-width: 600px){
+                .centerr_4 { width: 580px !important; margin: 0 auto !important; padding: 0 !important; }
+            }
+
+            .centerr_5 { padding: 0 20px !important; }
+            @media screen AND (min-width: 500px){
+                .centerr_5 { width: 480px !important; margin: 0 auto !important; padding: 0 !important; }
+            }
+        /* CENTERR */
+    /* DEFAULT */
+
+
+    /* DN E DNN */
+        .dn_700 { display: block; }
+        .dnn_700 { display: none; }
+        @media screen AND (max-width:699px) {
+            .dn_700 { display: none; }
+            .dnn_700 { display: block; }
+        }
+        .dn_1000 { display: block; }
+        .dnn_1000 { display: none; }
+        @media screen AND (max-width:999px) {
+            .dn_1000 { display: none; }
+            .dnn_1000 { display: block; }
+        }
+
+        @media screen AND (max-width:999px) {
+            .dnX_1000 { display: none; }
+            .dbX_1000 { display: block; }
+            .dibX_1000 { display: inline-block; }
+        }
+    /* DN E DNN */
+
+
+    /* FLEXX */
+        @media screen AND (min-width:300px) { .flexx_x_300 { display: flex !important; display: -webkit-flex !important; flex-wrap: wrap !important; -ms-flex-wrap: wrap !important; } }
+        @media screen AND (min-width:400px) { .flexx_x_400 { display: flex !important; display: -webkit-flex !important; flex-wrap: wrap !important; -ms-flex-wrap: wrap !important; } }
+        @media screen AND (min-width:500px) { .flexx_x_500 { display: flex !important; display: -webkit-flex !important; flex-wrap: wrap !important; -ms-flex-wrap: wrap !important; } }
+        @media screen AND (min-width:600px) { .flexx_x_600 { display: flex !important; display: -webkit-flex !important; flex-wrap: wrap !important; -ms-flex-wrap: wrap !important; } }
+        @media screen AND (min-width:700px) { .flexx_x_700 { display: flex !important; display: -webkit-flex !important; flex-wrap: wrap !important; -ms-flex-wrap: wrap !important; } }
+        @media screen AND (min-width:800px) { .flexx_x_800 { display: flex !important; display: -webkit-flex !important; flex-wrap: wrap !important; -ms-flex-wrap: wrap !important; } }
+        @media screen AND (min-width:900px) { .flexx_x_900 { display: flex !important; display: -webkit-flex !important; flex-wrap: wrap !important; -ms-flex-wrap: wrap !important; } }
+        @media screen AND (min-width:1000px) { .flexx_x_1000 { display: flex !important; display: -webkit-flex !important; flex-wrap: wrap !important; -ms-flex-wrap: wrap !important; } }
+        @media screen AND (min-width:1100px) { .flexx_x_1100 { display: flex !important; display: -webkit-flex !important; flex-wrap: wrap !important; -ms-flex-wrap: wrap !important; } }
+        @media screen AND (min-width:1200px) { .flexx_x_1200 { display: flex !important; display: -webkit-flex !important; flex-wrap: wrap !important; -ms-flex-wrap: wrap !important; } }
+        @media screen AND (min-width:1300px) { .flexx_x_1300 { display: flex !important; display: -webkit-flex !important; flex-wrap: wrap !important; -ms-flex-wrap: wrap !important; } }
+        @media screen AND (min-width:1400px) { .flexx_x_1400 { display: flex !important; display: -webkit-flex !important; flex-wrap: wrap !important; -ms-flex-wrap: wrap !important; } }
+        @media screen AND (min-width:1500px) { .flexx_x_1500 { display: flex !important; display: -webkit-flex !important; flex-wrap: wrap !important; -ms-flex-wrap: wrap !important; } }
+    /* FLEXX */

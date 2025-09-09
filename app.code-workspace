@@ -1,0 +1,101 @@
+{
+	"folders": [
+		{
+			"name": "public",
+			"path": "vue/public"
+		},
+		{
+			"name": "src",
+			"path": "vue/src"
+		},
+		{
+			"name": "_root",
+			"path": "..app/_root"
+		},
+		{
+			"name": "_vendor",
+			"path": "..app/_vendor"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../_Fm_Designer/z_temp__"
+		}
+	],
+	"settings": {
+		"powershell.cwd": "src",
+		"search.exclude": {
+			"**/dist/**": true,
+			"**/laravel/**": true,
+			"**/node_modules/**": true,
+			"**/.claude/**": true,
+			"**/mcp-estrutura-padrao/**": true,
+			"**/z_docs/**": true,
+			"**/z_docs_new/**": true,
+			"**/..data/**": true,
+			"**/..public_html/**": true,
+			"**/public_html/**": true,
+			"**/z_layout/**": true,
+			"**/z_temp/**": true,
+			"**/*.tmp": true,
+			"**/*.temp": true,
+			"**/untitled*": true,
+			"**/dist": true,
+			"**/laravel": true,
+			"**/node_modules": true,
+			"**/.claude": true,
+			"**/mcp-estrutura-padrao": true,
+			"**/z_docs": true,
+			"**/z_docs_new": true,
+			"**/..data": true,
+			"**/..public_html": true,
+			"**/public_html": true,
+			"**/z_temp": true,
+			"**/z_layout": true,
+			"**/CLAUDE.md": true
+		},
+		"files.exclude": {
+			"**/dist/**": true,
+			"**/node_modules/**": true,
+			"**/.claude/**": true,
+			"**/mcp-estrutura-padrao/**": true,
+			"**/z_docs/**": true,
+			"**/z_docs_new/**": true,
+			"**/..data/**": true,
+			"**/..public_html/**": true,
+			"**/public_html/**": true,
+			"**/z_layout/**": true,
+			"**/z_temp/**": true,
+			"**/*.tmp": true,
+			"**/*.temp": true,
+			"**/untitled*": true,
+			"**/dist": true,
+			"**/node_modules": true,
+			"**/.claude": true,
+			"**/mcp-estrutura-padrao": true,
+			"**/z_docs": true,
+			"**/z_docs_new": true,
+			"**/..data": true,
+			"**/..public_html": true,
+			"**/public_html": true,
+			"**/z_temp": true,
+			"**/z_layout": true,
+			"**/CLAUDE.md": true
+		},
+		"files.watcherExclude": {
+			"**/dist/**": true,
+			"**/laravel/**": true,
+			"**/node_modules/**": true,
+			"**/.claude/**": true,
+			"**/mcp-estrutura-padrao/**": true,
+			"**/z_docs/**": true,
+			"**/z_docs_new/**": true,
+			"**/..data/**": true,
+			"**/..public_html/**": true,
+			"**/public_html/**": true,
+			"**/z_temp/**": true,
+			"**/CLAUDE.md": true
+		}
+	}
+}

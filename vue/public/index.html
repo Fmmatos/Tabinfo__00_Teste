@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <meta/>
+
+        <!-- FONTS -->
+            <!-- INTER -->
+                <link rel="stylesheet" href="/css/fonts/inter/inter.css">
+                <!-- <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');</style> -->
+            <!-- INTER -->
+
+            <!-- SORA -->
+                <style>@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');</style>
+            <!-- SORA -->
+
+            <!-- FONTAWESOME -->
+                <link rel="stylesheet" href="/css/fonts/fontawesome.css">
+                <style>@font-face{font-family:"FontAwesome";src:url("/css/fonts/fontawesome.woff?v=4.7.0") format("woff");font-weight:400;font-style:normal;font-display:swap}</style>
+            <!-- FONTAWESOME -->
+        <!-- FONTS -->
+
+        <!-- DEFAULT -->
+            <link rel="stylesheet" href="/css/default.min.css">
+        <!-- DEFAULT -->
+    </head>
+    <body class="w100p minw_all o-hx">
+        <noscript>
+            <strong>Lamentamos, mas a administração não funciona corretamente sem o JavaScript habilitado. Ative-o para continuar.</strong>
+        </noscript>
+        <div id="app"></div>
+
+        <script>
+            var $_APP = 0;
+            var $_GET = {};
+            var $_GLOBAL = {
+                DIR: '',
+                DIR_API: 'http://localhost:4000/Sites/Tabinfo/00_Teste/public_html/api',
+
+                HEX_1: '222222',    
+                HEX_2: '090909', 
+                HEX_3: '08C13C',
+                HEX_4: 'F51220',
+                HEX_5: '8200BE',
+            };
+            var SHOW = {};
+            var FORM = {};
+            var OBJ = {};
+
+            // JS_ROOT.JS
+                if(!window.location.pathname.includes('/admin/')) {
+                    var script = document.createElement('script');
+                    script.src = `${$_GLOBAL.DIR_API}/../assets/js_root.js`;
+                    script.type = 'text/javascript';
+                    script.onload = function() {
+                    };
+                    script.onerror = function() {
+                        console.error('Erro ao carregar js_root.js');
+                    };
+                    document.head.appendChild(script);
+                }
+            // JS_ROOT.JS
+
+            // JS_ADMIN.JS
+                if(window.location.pathname.includes('/admin/')) {
+                    var script = document.createElement('script');
+                    script.src = `${$_GLOBAL.DIR_API}/../assets/js_admin.js`;
+                    script.type = 'text/javascript';
+                    script.onload = function() {
+                    };
+                    script.onerror = function() {
+                        console.error('Erro ao carregar js_admin.js');
+                    };
+                    document.head.appendChild(script);
+                }
+            // JS_ADMIN.JS
+
+            // FUNCTIONS
+                function pre($e){ console.log($e); }
+            // FUNCTIONS
+        </script>
+
+        <!-- <script src="https://sdk.mercadopago.com/js/v2">// MERCADOPAGO</script> -->
+
+        <script>//SCRIPT</script>
+    </body>
+</html>
+

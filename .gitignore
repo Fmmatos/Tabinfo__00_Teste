@@ -1,0 +1,13 @@
+# Ignorar Pastas
+z_layout
+
+# Ignorar SubPastas
+/public_html/.dist/admin/
+/public_html/.dist/root/
+/public_html/.htaccess
+/public_html/web/photos/
+/public_html/web/thumbs/
+
+# Ignorar Arquivos
+/..data/json/orders/*.json
+/vue/zip.js

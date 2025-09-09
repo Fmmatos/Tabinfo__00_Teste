@@ -1,0 +1,63 @@
+<IfModule mod_rewrite.c>
+
+	### URL AMG
+        RewriteEngine On
+    
+		# Lidar com cabeçalho de autorização
+            RewriteCond %{HTTP:Authorization} .
+            RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+        # Lidar com cabeçalho de autorização
+
+        # Redirecionar barras finais se não for uma pasta
+            RewriteCond %{REQUEST_FILENAME} !-d
+            RewriteCond %{REQUEST_URI} (.+)/$
+            RewriteRule ^ %1 [L,R=301]
+        # Redirecionar barras finais se não for uma pasta
+
+        # Enviar solicitações para o controlador frontal
+            RewriteCond %{REQUEST_FILENAME} !-f
+            RewriteCond %{REQUEST_FILENAME} !-d
+            RewriteRule ^ index.php [L]
+        # Enviar solicitações para o controlador frontal
+	### URL AMG
+
+</IfModule>
+
+
+### BLOQUANDO PASTAS E ARQUIVOS
+	RewriteCond %{REQUEST_URI} !index\.php$
+	RewriteCond %{REQUEST_URI} !download\.php$
+	RewriteRule .* - [F]
+### BLOQUANDO PASTAS E ARQUIVOS
+
+
+### BLOQUEAR LISTAGEM DE DIRETÓRIOS
+	Options -Indexes
+### BLOQUEAR LISTAGEM DE DIRETÓRIOS
+
+
+### PROTEGER ARQUIVOS SENSÍVEIS
+	<FilesMatch "(^\.env$|^\.git.*$|^\.ht(access|passwd)$|^(composer|package)\.(json|lock)$|^(phpunit\.xml|artisan|server\.php)$|.*\.(env|inc|tpl|h|ihtml|ini|conf|class|bin|spd|theme|module|sql)$)">
+		<IfModule mod_authz_core.c>
+			Require all denied
+		</IfModule>
+		<IfModule !mod_authz_core.c>
+			Order deny,allow
+			Deny from all
+		</IfModule>
+	</FilesMatch>
+### BLOQUANDO ACESSO A EXTENSSOES
+
+
+### BLOQUEIA O ACESSO AO .HTACCESS
+	<Files ~ "^\.ht">
+		<IfModule mod_authz_core.c>
+			Require all denied
+		</IfModule>
+		<IfModule !mod_authz_core.c>
+			Order deny,allow
+			Deny from all
+		</IfModule>
+	</Files>
+### BLOQUEIA O ACESSO AO .HTACCESS
+

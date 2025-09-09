@@ -1,0 +1,19 @@
+Requisitos para Teste de Desenvolvedor PHP
+Este projeto tem como objetivo avaliar as habilidades de um desenvolvedor PHP através da
+criação de um sistema completo utilizando o framework Laravel, com integração a um banco de
+dados MySQL remoto, e a geração de um APK funcional para Android.
+Requisitos Técnicos
+• Aplicação backend desenvolvida com Laravel (versão estável).
+• Banco de dados MySQL remoto, com estrutura relacional apropriada.
+• Aplicativo Android funcional (APK) que se conecta ao backend via API REST.
+• Estrutura do projeto organizada conforme boas práticas de desenvolvimento.
+Funcionalidades Mínimas
+• Tela de login com autenticação segura.
+• Tela de cadastro de usuário com validações.
+• Recuperação de senha via e-mail.
+• Dashboard protegida (após login), com botão de logout.
+• CRUD completo de usuários (criar, ler, atualizar, deletar).
+Considerações Finais
+O foco do teste é avaliar a qualidade do código, organização do projeto, segurança, estrutura de
+banco de dados, e a capacidade de entrega de um produto funcional. A entrega deve incluir o
+código-fonte completo, instruções de deploy e o arquivo APK funcional.

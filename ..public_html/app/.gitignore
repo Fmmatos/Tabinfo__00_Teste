@@ -1,0 +1,15 @@
+# Ignorar Pastas
+node_modules
+platforms
+plugins
+
+# Ignorar SubPastas
+
+
+# Ignorar Arquivos
+# .htaccess
+.DS_Store
+config.xml
+index.php
+package.json
+package-lock.json

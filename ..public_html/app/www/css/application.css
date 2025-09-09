@@ -1,0 +1,41 @@
+    * {
+        -webkit-tap-highlight-color: rgba(0,0,0,0); /* faça seleção de link transparente, ajuste a opacidade do último valor de 0 a 1,0 */
+        margin:0; padding:0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; outline: 0;
+    }
+
+    body {
+        -webkit-touch-callout: none;                /* evitar texto explicativo para copiar imagem, etc quando tocar para segurar */
+        -webkit-text-size-adjust: none;             /* impedir que o webkit redimensione o texto para ajustá-lo */
+        -webkit-user-select: none;                  /* evite copiar e colar, para permitir, altere 'none' para 'text' */
+        width:100%;
+        height:100vh;
+        min-height: 100vmin;
+        margin:0px;
+        padding:0px;
+        padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    }
+
+    /* ANIMATION */
+        /* SPLASH */
+            .bounceInLeft  { animation: bounceInLeft 1500ms; } 
+            @keyframes bounceInLeft { 0% { animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); opacity: 0; -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0); -moz-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0); -ms-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0); -o-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0); transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0) } 15% { animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); opacity: 1; -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0); -moz-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0); -ms-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0); -o-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0); transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0) } }
+        /* SPLASH */
+
+        /* PG */
+            .fadeInUp  { animation: fadeInUp 1500ms }
+            @keyframes fadeInUp { 0% { opacity: 0; -webkit-transform: translateY(20px); -moz-transform: translateY(20px); -ms-transform: translateY(20px); -o-transform: translateY(20px); transform: translateY(20px) } 50% { opacity: 1; -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0) } }
+        /* PG */
+
+        .fadeIn  { animation: fadeIn 500ms }
+        @keyframes fadeIn { 0% { opacity: 0 } 100% { opacity: 1 } }
+    /* ANIMATION */
+
+    /* ALERTS OFFLINE */
+        .error_app .errors__ { position: fixed; z-index: 910020; top: 50%; left: 50%; width: 100%; padding: 0 20px; font-family: 'poppins'; Transform: translate(-50%, -50%); }
+        .error_app .errors__ > div { position: relative; width: 100%; max-width: 700px; min-width: 250px; padding: 25px 20px; margin: 20px auto; color: #666; border: 1px solid #666; background: #fff; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1); -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1); box-shadow: 0 1px 1px rgba(0,0,0,0.1); }
+        .error_app .errors__ > div { font-size: 14px !important; font-weight: 500; line-height: 20px !important }
+        .error_app .errors__ > div a { position: absolute; top: 10px; right: 10px; }
+        .error_app .errors__ > div b { display: block; padding-top: 20px; font-size: 16px; font-weight: 700; text-align: center; }
+        .error_app .errors__ > div span { display: block; padding-top: 20px; font-size: 14px; line-height: 20px; text-align: center; }
+        .error_app .errors__ > div button { display: block; width: 100%; padding: 15px; margin: 20px 0 10px; font-size: 14px; font-weight: 600; color: #fff; border: 0; background: #195CAA; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+    /* ALERTS OFFLINE */
