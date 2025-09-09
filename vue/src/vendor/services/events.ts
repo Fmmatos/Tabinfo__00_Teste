@@ -3388,7 +3388,13 @@ import { NEW__url_admin_dashboard, NEW__request_obj, NEW__open__queryParams, NEW
         // OPEN_HREF
             export function open_href(url: string): void
             {
-                window.location.href = url;
+                // @ts-ignore
+                if (window.cordova && window.cordova.InAppBrowser) {
+                    // @ts-ignore
+                    window.cordova.InAppBrowser.open(url, target, options);
+                } else {
+                    window.location.href = url;
+                }
             }
         // OPEN_HREF
 
