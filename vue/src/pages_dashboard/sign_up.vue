@@ -40,7 +40,7 @@ import { inject, ref } from 'vue';
                 // GO HOME
                     if(json.token){
                         rootAuth(json.token);
-                        open(`/`);
+                        open__(`/`);
                     }
                 // GO HOME
             });

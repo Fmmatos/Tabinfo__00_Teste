@@ -63,14 +63,14 @@ class CustomersDashboardController
 
 
                     // INDICATIONS
-                        $indications = null;
-                        if(isset($request['GET']['i']) && $request['GET']['i']){
-                            $indications = Customers::find($request['GET']['i']);
+                        // $indications = null;
+                        // if(isset($request['GET']['i']) && $request['GET']['i']){
+                        //     $indications = Customers::find($request['GET']['i']);
 
-                            if(!$indications?->id){
-                                $indications = Customers::where('url', $request['GET']['i'])->first();
-                            }        
-                        }
+                        //     if(!$indications?->id){
+                        //         $indications = Customers::where('url', $request['GET']['i'])->first();
+                        //     }        
+                        // }
                     // INDICATIONS
 
 
@@ -90,20 +90,20 @@ class CustomersDashboardController
                             'password' => Hash::make($request['password']),
                         ]);
 
-                        // CustomersAddress::create([
-                        //     'main' => 1,
-                        //     'customers' => $customers->id,
-                        //     'name' => $request['name'],
-                        //     'phone' => $request['phone'],
+                        CustomersAddress::create([
+                            'main' => 1,
+                            'customers' => $customers->id,
+                            'name' => $request['name'],
+                            'phone' => $request['phone'],
 
-                        //     'zipcode' => $request['zipcode'],
-                        //     'address' => $request['address'],
-                        //     'number' => $request['number'],
-                        //     'complement' => $request['complement'],
-                        //     'neighborhood' => $request['neighborhood'],
-                        //     'uf' => $request['uf'],
-                        //     'city' => $request['city'],
-                        // ]);
+                            'zipcode' => $request['zipcode'],
+                            'address' => $request['address'],
+                            'number' => $request['number'],
+                            'complement' => $request['complement'],
+                            'neighborhood' => $request['neighborhood'],
+                            'uf' => $request['uf'],
+                            'city' => $request['city'],
+                        ]);
                     // CREATE
 
 
