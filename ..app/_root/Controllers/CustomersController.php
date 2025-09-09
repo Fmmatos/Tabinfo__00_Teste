@@ -95,7 +95,7 @@ class CustomersController
                                 'sexo',
                                 'password',
 
-                                'customers_address' => 1,
+                                // 'customers_address' => 1,
                             ];
                         // ARRAY
 

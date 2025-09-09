@@ -5,7 +5,7 @@ import SELECT__ from '@/vendor/components/input/select.vue';
 import ADDRESS__ from '@/vendor/components/input/__address.vue';
 
 import api from '@/vendor/services/api';
-import { DIR_P, LOCALHOST } from '@/vendor/services/localhost';
+import { DIR, DIR_P, LOCALHOST } from '@/vendor/services/localhost';
 import { key__, MOBILE, open__, open_blank, open_href } from '@/vendor/services/events';
 import { rootAuth } from '@/vendor/storages/auth';
 import { inject, ref } from 'vue';
@@ -40,7 +40,7 @@ import { inject, ref } from 'vue';
                 // GO HOME
                     if(json.token){
                         rootAuth(json.token);
-                        open_href(`/dashboard`);
+                        open(`/`);
                     }
                 // GO HOME
             });
@@ -93,7 +93,7 @@ import { inject, ref } from 'vue';
                         <PASSWORD__ label="Senha" name="password" space="h15" space_1="h10" class="design fz13" required />
                     </div>
 
-                    <!-- <div class="posr pt10 ml--10 mr--10">
+                    <div class="posr pt10 ml--10 mr--10">
                         <ADDRESS__ class="design fz13"
                             class_1="wr12 p10" class_2="wr12 p10" class_3="wr6 p10" class_4="wr6 p10" class_5="wr12 p10" class_6="wr5 p10" class_7="wr7 p10"
                             :value_1="LOCALHOST() ? '88.010-000' : ''"
@@ -105,7 +105,7 @@ import { inject, ref } from 'vue';
                             :value_7="LOCALHOST() ? 'Florianópolis' : ''"
                             required
                         />
-                    </div> -->
+                    </div>
 
                     <div v-if="OBJ?.info?.image_termo_de_uso_cadastro" class="pt20 flexx">
                         <i class="faa-info-circle pt5"></i>
